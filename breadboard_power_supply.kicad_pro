@@ -515,7 +515,11 @@
       },
       {
         "netclass": "Power Output",
-        "pattern": "PWR_OUT"
+        "pattern": "PWR_OUT_TOP"
+      },
+      {
+        "netclass": "Power Output",
+        "pattern": "PWR_OUT_BOT"
       }
     ]
   },
@@ -524,7 +528,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "gerbers/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -634,7 +638,7 @@
   "sheets": [
     [
       "0fd18211-fba0-414e-8296-c83c5f460247",
-      "Root"
+      "Raiz"
     ]
   ],
   "text_variables": {}

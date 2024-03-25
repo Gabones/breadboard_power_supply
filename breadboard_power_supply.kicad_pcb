@@ -113,9 +113,9 @@
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "gerbers/")
 		)
 	)
 	(net 0 "")
@@ -124,10 +124,11 @@
 	(net 3 "/5v")
 	(net 4 "/3v3")
 	(net 5 "Net-(D1-A)")
-	(net 6 "/PWR_OUT")
+	(net 6 "/PWR_OUT_TOP")
 	(net 7 "/PWR_IN")
 	(net 8 "Net-(U2-ADJ)")
 	(net 9 "unconnected-(S1-Pad3)")
+	(net 10 "/PWR_OUT_BOT")
 	(footprint "Package_TO_SOT_THT:TO-220-3_Vertical"
 		(layer "F.Cu")
 		(uuid "06187b74-714d-465c-aa0f-e2278cd7e6c6")
@@ -147,7 +148,7 @@
 		)
 		(property "Value" "LM7805_TO220"
 			(at 2.54 2.5 0)
-			(layer "F.Fab")
+			(layer "F.SilkS")
 			(uuid "65484aa0-69e0-4da0-847b-353def3fbbbd")
 			(effects
 				(font
@@ -194,7 +195,7 @@
 		)
 		(property ki_fp_filters "TO?220*")
 		(path "/a8d6fbf2-3014-4560-8598-6859aab3239d")
-		(sheetname "Root")
+		(sheetname "Raiz")
 		(sheetfile "breadboard_power_supply.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -601,7 +602,7 @@
 			)
 		)
 		(path "/ede8eb1b-6e16-4f49-8127-9527bbfc01f6")
-		(sheetname "Root")
+		(sheetname "Raiz")
 		(sheetfile "breadboard_power_supply.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -872,7 +873,7 @@
 		)
 		(property ki_fp_filters "TerminalBlock*:*")
 		(path "/1c2c96d1-bfae-4dc0-a395-c59ad5cd277e")
-		(sheetname "Root")
+		(sheetname "Raiz")
 		(sheetfile "breadboard_power_supply.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -1043,7 +1044,7 @@
 			(drill 1.52)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 6 "/PWR_OUT")
+			(net 10 "/PWR_OUT_BOT")
 			(pinfunction "Pin_2")
 			(pintype "passive")
 			(uuid "3dcac868-b080-4ebc-a147-0cf2e7f324b1")
@@ -1067,7 +1068,7 @@
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.0*1.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm  diameter 3.0mm width 1.6mm Capacitor")
 		(property "Reference" "C3"
-			(at 1.25 -2.05 180)
+			(at 2.8536 -1.9738 180)
 			(layer "F.SilkS")
 			(uuid "1d12e61a-c54b-466e-b076-374cf5742d9f")
 			(effects
@@ -1078,8 +1079,8 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 1.25 2.05 180)
-			(layer "F.Fab")
+			(at 0.5286 -1.9488 180)
+			(layer "F.SilkS")
 			(uuid "ae4cffdf-d4f5-4512-82e2-ca1a35bccbe1")
 			(effects
 				(font
@@ -1126,7 +1127,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/64c33a1d-9a72-4338-a83d-da1dbaefc3ad")
-		(sheetname "Root")
+		(sheetname "Raiz")
 		(sheetfile "breadboard_power_supply.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -1281,6 +1282,7 @@
 		(property "Reference" "J4"
 			(at -2.6974 2.4742 0)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "ce460a78-2114-4038-9751-fd4dedb57ccc")
 			(effects
 				(font
@@ -1336,7 +1338,7 @@
 				)
 			)
 		)
-		(property "Purpose" "Output Voltage Selector 2"
+		(property "Purpose" "Output Voltage Selector 1"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1351,7 +1353,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/f86d13bf-3bd6-4ff0-b4f4-236538a82af2")
-		(sheetname "Root")
+		(sheetname "Raiz")
 		(sheetfile "breadboard_power_supply.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -1532,7 +1534,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 6 "/PWR_OUT")
+			(net 6 "/PWR_OUT_TOP")
 			(pinfunction "Pin_2")
 			(pintype "passive")
 			(uuid "d2e28f70-22f0-4435-851e-e780be6ce7c3")
@@ -1626,7 +1628,7 @@
 		)
 		(property ki_fp_filters "TerminalBlock*:*")
 		(path "/c372613b-daff-4fff-8552-2fb989e70c28")
-		(sheetname "Root")
+		(sheetname "Raiz")
 		(sheetfile "breadboard_power_supply.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -1797,7 +1799,7 @@
 			(drill 1.52)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 6 "/PWR_OUT")
+			(net 6 "/PWR_OUT_TOP")
 			(pinfunction "Pin_2")
 			(pintype "passive")
 			(uuid "1aaa79b7-b2d8-4bf2-93d5-7246efc757f9")
@@ -1822,7 +1824,7 @@
 		(descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x02 2.54mm single row")
 		(property "Reference" "J1"
-			(at -2.9972 0.9652 0)
+			(at -3.261 1.1832 0)
 			(layer "F.SilkS")
 			(uuid "f1f99dbc-7683-462b-89f8-46d348858669")
 			(effects
@@ -1894,7 +1896,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/da642f17-44f2-49c7-8d12-690c20b55368")
-		(sheetname "Root")
+		(sheetname "Raiz")
 		(sheetfile "breadboard_power_supply.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -2075,7 +2077,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 6 "/PWR_OUT")
+			(net 10 "/PWR_OUT_BOT")
 			(pinfunction "Pin_2")
 			(pintype "passive")
 			(uuid "1b1e2d65-326a-44fc-b0a3-a072d614f821")
@@ -2111,7 +2113,7 @@
 		)
 		(property "Value" "LM317_TO-220"
 			(at 2.54 2.5 180)
-			(layer "F.Fab")
+			(layer "F.SilkS")
 			(uuid "e304db90-eb46-424d-9d94-ad4e81fe65b2")
 			(effects
 				(font
@@ -2158,7 +2160,7 @@
 		)
 		(property ki_fp_filters "TO?220*")
 		(path "/163ecf9f-5c23-40f9-b01f-ca47cb2ef9e9")
-		(sheetname "Root")
+		(sheetname "Raiz")
 		(sheetfile "breadboard_power_supply.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -2404,7 +2406,7 @@
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.0*1.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm  diameter 3.0mm width 1.6mm Capacitor")
 		(property "Reference" "C2"
-			(at 1.3208 2.032 180)
+			(at 2.906 2.0084 180)
 			(layer "F.SilkS")
 			(uuid "c769c18a-f9f5-46dd-9550-f3085de69849")
 			(effects
@@ -2415,8 +2417,8 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 1.25 2.05 180)
-			(layer "F.Fab")
+			(at -0.244 1.9334 180)
+			(layer "F.SilkS")
 			(uuid "431d1caf-2db3-4775-a7c1-23a3c0727b74")
 			(effects
 				(font
@@ -2463,7 +2465,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/ba36c526-08de-42f1-838a-86f0950a0ac9")
-		(sheetname "Root")
+		(sheetname "Raiz")
 		(sheetfile "breadboard_power_supply.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -2618,6 +2620,7 @@
 		(property "Reference" "J3"
 			(at 2.3976 2.9392 0)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "ddd65488-1a58-4f81-9bd1-b3658430db5f")
 			(effects
 				(font
@@ -2688,7 +2691,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/11f28c33-67ab-4e1c-a291-2512cf1c8fc6")
-		(sheetname "Root")
+		(sheetname "Raiz")
 		(sheetfile "breadboard_power_supply.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -2869,7 +2872,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 6 "/PWR_OUT")
+			(net 10 "/PWR_OUT_BOT")
 			(pinfunction "Pin_2")
 			(pintype "passive")
 			(uuid "0e313c1e-d9c9-490d-a025-4811d25675f4")
@@ -2963,7 +2966,7 @@
 		)
 		(property ki_fp_filters "BarrelJack*")
 		(path "/c709f999-620a-49e5-ae50-a22d4665c243")
-		(sheetname "Root")
+		(sheetname "Raiz")
 		(sheetfile "breadboard_power_supply.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -3371,7 +3374,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/0223f776-09e5-4e94-8370-03ef238f5353")
-		(sheetname "Root")
+		(sheetname "Raiz")
 		(sheetfile "breadboard_power_supply.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -3552,7 +3555,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 6 "/PWR_OUT")
+			(net 6 "/PWR_OUT_TOP")
 			(pinfunction "Pin_2")
 			(pintype "passive")
 			(uuid "7180034b-791e-4357-bb0c-0815f9c501c0")
@@ -3576,7 +3579,7 @@
 		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=7.62mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 7.62mm 0.167W length 3.6mm diameter 1.6mm")
 		(property "Reference" "R3"
-			(at 9.3356 0 0)
+			(at 3.79 0.0614 90)
 			(layer "F.SilkS")
 			(uuid "b47c9ad0-9a48-45a8-9299-4625eb12cf81")
 			(effects
@@ -3587,8 +3590,8 @@
 			)
 		)
 		(property "Value" "560"
-			(at 3.81 1.92 -90)
-			(layer "F.Fab")
+			(at 10.215 0.0614 270)
+			(layer "F.SilkS")
 			(uuid "d4330b17-503a-4475-8d65-88a3dbbe9f95")
 			(effects
 				(font
@@ -3635,7 +3638,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/a563af60-ab9b-46bf-a9eb-7516c999ffea")
-		(sheetname "Root")
+		(sheetname "Raiz")
 		(sheetfile "breadboard_power_supply.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -3848,7 +3851,7 @@
 		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=7.62mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 7.62mm 0.167W length 3.6mm diameter 1.6mm")
 		(property "Reference" "R1"
-			(at 3.81 -1.92 90)
+			(at 3.81 -0.041 90)
 			(layer "F.SilkS")
 			(uuid "430ba9ea-9fb0-4c23-a27f-4089bb179314")
 			(effects
@@ -3859,8 +3862,8 @@
 			)
 		)
 		(property "Value" "330"
-			(at 3.81 1.92 90)
-			(layer "F.Fab")
+			(at 3.788 -1.816 90)
+			(layer "F.SilkS")
 			(uuid "5525f605-2f44-4944-bbf1-a4ececa44a57")
 			(effects
 				(font
@@ -3907,7 +3910,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/6a765d12-aa19-4016-b243-1c0d22fdc450")
-		(sheetname "Root")
+		(sheetname "Raiz")
 		(sheetfile "breadboard_power_supply.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -4192,7 +4195,7 @@
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/5e13315d-6bbd-478f-82fc-cc0bc84ec42c")
-		(sheetname "Root")
+		(sheetname "Raiz")
 		(sheetfile "breadboard_power_supply.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -4362,7 +4365,7 @@
 		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=7.62mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 7.62mm 0.167W length 3.6mm diameter 1.6mm")
 		(property "Reference" "R2"
-			(at 9.3356 -0.0508 0)
+			(at 3.74 0.0562 90)
 			(layer "F.SilkS")
 			(uuid "7eb750c2-09e4-4b22-919e-f286d496475e")
 			(effects
@@ -4373,8 +4376,8 @@
 			)
 		)
 		(property "Value" "330"
-			(at 3.81 1.92 -90)
-			(layer "F.Fab")
+			(at 10.24 0.1312 270)
+			(layer "F.SilkS")
 			(uuid "b50ac7a8-c941-4945-9741-3d68572094cd")
 			(effects
 				(font
@@ -4421,7 +4424,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/3b026bff-7896-43b4-9f22-ff31f96dada7")
-		(sheetname "Root")
+		(sheetname "Raiz")
 		(sheetfile "breadboard_power_supply.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -4634,7 +4637,7 @@
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.0*1.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm  diameter 3.0mm width 1.6mm Capacitor")
 		(property "Reference" "C1"
-			(at 1.25 -2.05 0)
+			(at 0.0816 -1.9834 0)
 			(layer "F.SilkS")
 			(uuid "e05dd68c-ff83-4841-acaa-603e65d6a9cf")
 			(effects
@@ -4645,8 +4648,8 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 1.25 2.05 0)
-			(layer "F.Fab")
+			(at 2.6316 -2.0084 0)
+			(layer "F.SilkS")
 			(uuid "d9fc5e15-edf9-4469-86ed-ff4cf2ef6734")
 			(effects
 				(font
@@ -4693,7 +4696,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/b8b810ab-0337-4c9f-b203-d8edb85e4a85")
-		(sheetname "Root")
+		(sheetname "Raiz")
 		(sheetfile "breadboard_power_supply.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -5006,6 +5009,54 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "f3a8d4fd-bf92-4c45-a98d-e5d8024a39fc")
+	)
+	(gr_text "5v"
+		(at 107.35 128.7587 0)
+		(layer "F.SilkS")
+		(uuid "113a40d6-41cd-4fc0-bf88-862c1f111d03")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "3.3v"
+		(at 100.9 128.7587 0)
+		(layer "F.SilkS")
+		(uuid "25ceaa81-92f0-4a13-8172-45be82058388")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "3.3v"
+		(at 100.75 85.5279 0)
+		(layer "F.SilkS")
+		(uuid "71d9d797-d7e5-4d43-95be-310664daa377")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "5v"
+		(at 107.2 85.5279 0)
+		(layer "F.SilkS")
+		(uuid "ad338d98-8bf1-4b79-93ee-3a0c8a022dc8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
 	)
 	(segment
 		(start 119.634 109.982)
@@ -5320,14 +5371,6 @@
 		(uuid "1ae6923b-5986-4ecb-8cb5-f871f835d7be")
 	)
 	(segment
-		(start 122.586 130.6068)
-		(end 129.286 130.6068)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 6)
-		(uuid "26c84651-418b-4121-9375-e0595bb3f59c")
-	)
-	(segment
 		(start 117.046 81.141)
 		(end 120.396 84.491)
 		(width 0.2)
@@ -5344,68 +5387,12 @@
 		(uuid "40043d06-2c37-4c9d-9adb-15d16debf296")
 	)
 	(segment
-		(start 117.046 131.7668)
-		(end 105.9576 131.7668)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 6)
-		(uuid "4ca37894-01f4-4a4e-a855-ead65a2345f1")
-	)
-	(segment
-		(start 120.396 128.4168)
-		(end 122.5136 126.2992)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 6)
-		(uuid "625a6e72-3246-4a66-a58e-5c365aab298d")
-	)
-	(segment
 		(start 106.3718 81.141)
 		(end 117.046 81.141)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 6)
 		(uuid "893f947a-40ec-4aa6-9827-d035e02b0fef")
-	)
-	(segment
-		(start 122.5136 86.6086)
-		(end 120.396 84.491)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 6)
-		(uuid "92282aa3-491e-46b0-b9ca-dd5b9d80e20d")
-	)
-	(segment
-		(start 105.9576 131.7668)
-		(end 104.8076 130.6168)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 6)
-		(uuid "94aa1ff9-a767-4ae5-b913-92eabe991cc7")
-	)
-	(segment
-		(start 122.5136 126.2992)
-		(end 122.5136 86.6086)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 6)
-		(uuid "9be03c81-1e8c-41ca-b36a-c2fa4ce11450")
-	)
-	(segment
-		(start 120.396 128.4168)
-		(end 122.586 130.6068)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 6)
-		(uuid "d23fbc41-2980-462a-9363-d01051923d51")
-	)
-	(segment
-		(start 120.396 128.4168)
-		(end 117.046 131.7668)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 6)
-		(uuid "e8fdf30e-9ab6-4273-8864-cd39f113f676")
 	)
 	(segment
 		(start 129.286 84.831)
@@ -5502,6 +5489,46 @@
 		(layer "B.Cu")
 		(net 8)
 		(uuid "d7a3302e-1032-4ffe-b504-e410eae9c83c")
+	)
+	(segment
+		(start 122.586 130.6068)
+		(end 129.286 130.6068)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 10)
+		(uuid "26c84651-418b-4121-9375-e0595bb3f59c")
+	)
+	(segment
+		(start 117.046 131.7668)
+		(end 105.9576 131.7668)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 10)
+		(uuid "4ca37894-01f4-4a4e-a855-ead65a2345f1")
+	)
+	(segment
+		(start 105.9576 131.7668)
+		(end 104.8076 130.6168)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 10)
+		(uuid "94aa1ff9-a767-4ae5-b913-92eabe991cc7")
+	)
+	(segment
+		(start 120.396 128.4168)
+		(end 122.586 130.6068)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 10)
+		(uuid "d23fbc41-2980-462a-9363-d01051923d51")
+	)
+	(segment
+		(start 120.396 128.4168)
+		(end 117.046 131.7668)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 10)
+		(uuid "e8fdf30e-9ab6-4273-8864-cd39f113f676")
 	)
 	(zone
 		(net 1)
