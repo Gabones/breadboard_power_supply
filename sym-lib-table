@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "dk_PMIC-Voltage-Regulators-Linear")(type "Legacy")(uri "D:/Gabriel/Documentos/KiCad/Library Components/digikey-kicad-library-master/digikey-symbols/dk_PMIC-Voltage-Regulators-Linear.lib")(options "")(descr ""))
+  (lib (name "dk_Slide-Switches")(type "Legacy")(uri "D:/Gabriel/Documentos/KiCad/Library Components/digikey-kicad-library-master/digikey-symbols/dk_Slide-Switches.lib")(options "")(descr ""))
+)
